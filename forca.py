@@ -1,6 +1,6 @@
 print("Bem vindo ao jogo de forca")
 
-palavra_secreta = "praia"
+palavra_secreta = "botafogo"
 letras_acertadas = ['-','-','-','-','-']
 
 acertou = False
