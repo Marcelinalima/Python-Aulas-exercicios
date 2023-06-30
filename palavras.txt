@@ -1,6 +1,5 @@
-1- Botafogo
-2- Vasco
-3- Galo
-4-Madureira
-5-America
-
+botafogo
+vasco
+galo
+madureira
+america

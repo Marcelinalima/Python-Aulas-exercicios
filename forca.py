@@ -1,7 +1,8 @@
+
 import random
-
-
+import menu
 def jogar():
+  
     mensagem_de_abertura()
     palavra_secreta = pega_palavras_secretas()
     letras_acertadas = configura_letras_acertadas(palavra_secreta)
@@ -22,9 +23,11 @@ def jogar():
         acertou = '_' not in letras_acertadas
 
     if (acertou):
-        print('Voce ganhou')
+        mensagem_vitoria()
+        menu.chama_menu()
     else:
-        print('Voce foi enforcado')
+        mensagem_derrota()
+        menu.chama_menu()
 
 
 def mensagem_de_abertura():
@@ -60,3 +63,9 @@ def chute_certo(chute, palavra_secreta, letras_acertadas):
         if (chute == letra):
             letras_acertadas[posicao] = letra
         posicao += 1
+
+def mensagem_vitoria():
+    print('Voce ganhou')
+
+def mensagem_derrota():
+    print('Voce foi enforcado')
