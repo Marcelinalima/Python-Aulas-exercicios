@@ -1,7 +1,22 @@
-def velocidade(espaco, tempo):
-    #variavel v é espaço /tempo
-    v = espaco /tempo
-    print("velocidade: {} m/s".format(v))
+	
+class Maquina(object):
+	def Conversar(self):
+		print('Sou uma maquina')
+
+class Robo(Maquina):
+	def ConversarRobo(self):
+		print ('Sou um robo')
+
+Amigo1 = Maquina()
+Amigo2 = Robo()
+
+Amigo1.Conversar()
+Amigo2.Conversar()
 
 
-velocidade(100,20)    
+
+
+                     
+
+
+
