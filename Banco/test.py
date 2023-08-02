@@ -11,7 +11,7 @@ def sacar(conta, valor):
 def extrato(conta):
     print("numero: {} \ntitular: {} \nsaldo: {}".format(conta['numero'], conta['titular'], conta['saldo']))
 
-conta1 = cria_conta('123-4', 'Marcelina', 1000.0, 10000.0)
+conta1 = cria_conta('123-4', 'Marcelina Lima', 1000.0, 10000.0)
 conta1['saldo'] = 1000000.0
 depositar(conta1, 1000.0)
 extrato(conta1)
